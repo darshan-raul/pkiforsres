@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cert-test
+spec:
+  containers:
+  - name: openssl
+    image: python:3.9-slim
+    command: ["sleep", "3600"]
