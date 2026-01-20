@@ -1,12 +1,26 @@
-# PKI in Production – An SRE Survival Guide
+# PKI for SREs 
 
-Welcome to **PKI in Production**, a course designed specifically for Site Reliability Engineers who need to understand, operate, and debug Public Key Infrastructure in real-world environments.
+![alt text](../images/pkiforsresbanner.png)
 
-This course moves beyond the theoretical mathematics of cryptography and focuses on the **practical, operational, and "on-the-wire" reality** of PKI.
+>Ever felt overwhelmed by acronyms like X.509, CRL, SAN, PKCS, and cipher suites?
 
-## Course Structure
+> Ever copy-pasted an OpenSSL command from Stack Overflow, hoping it would “just work”?
 
-The course is divided into 10 modules, taking you from the absolute basics to advanced topics like Zero Trust and mTLS in Kubernetes.
+> Whats RSA vs ECDSA?
+
+> You’re not alone. PKI is one of those things everyone uses, few fully understand, and almost everyone gets burned by at least once.
+
+> This guide is your practical, hands-on path to finally understanding PKI—from first principles to real-world debugging.
+
+Welcome to **PKI for SREs**, a guide designed specifically for SREs/Cloud Engineers/DevOps Engineers who need to understand, operate, and debug Public Key Infrastructure in real-world environments.
+
+Although I will try to make all the theory ELI5 and explain with analogies and explain the practical implementations of each concept. Finally we will also have labs to solidify the learning.
+
+We will go deep and cover all the possible concepts for you to understand PKI in production. I will mark some sections as *optional* if they are too complex and not required for day to day operations.
+
+## Guide Structure
+
+The guide is divided into 10 modules, taking you from the absolute basics to advanced topics like Zero Trust and mTLS in Kubernetes.
 
 | Module | Topic | Focus |
 | :--- | :--- | :--- |
@@ -21,14 +35,16 @@ The course is divided into 10 modules, taking you from the absolute basics to ad
 | **Module 9** | [Troubleshooting & On-call](module-09/index.md) | Debugging playbooks, common outages, incident response |
 | **Module 10** | [Zero Trust & Modern PKI](module-10/index.md) | SPIFFE, ACME, Future of PKI |
 
-## How to use this course
+## Why I created this
 
-1.  **Read the Concepts**: Each module starts with a deep dive into the core concepts.
-2.  **Do the Labs**: This is a hands-on course. You will generate keys, break certificates, spy on traffic, and fix broken systems.
-3.  **Use the Cheatsheets**: Keep the [OpenSSL Cheatsheet](tools/openssl-cheatsheet.md) handy.
+- I have read a lot of articles and blogs on PKI over the period. Excellent ones! and you will find them in the notebookLM in the sources section. 
+- But as a beginner I would have always craved for a single place where I can map all of those concepts and understand them practically. How to view it in aws? in a nginx server? in a k8s cluster? during ssh sessions?
+- This is that attempt from me for the next lot of beginners. 
+- **Enjoy and Be curious!**
+
 
 ## Prerequisites
 
-*   Basic Linux command line proficiency.
+*   Basic Linux command line knowledge.
 *   Basic understanding of networking (IPs, ports, DNS).
-*   A Linux environment (VM, WSL, or native) with `openssl` installed.
+*   A Linux machine is encouraged, but windows [with WSL] and macs are also supported.

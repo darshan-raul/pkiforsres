@@ -21,6 +21,7 @@ theme:
     - navigation.expand
     - navigation.sections
     - navigation.top
+    - navigation.tabs
     - toc.follow
 markdown_extensions:
   - admonition
@@ -36,11 +37,11 @@ markdown_extensions:
       alternate_style: true
 nav:
   - Home: index.md
-  - Module 1 - Foundations:
+  - Foundations:
     - Foundations of PKI: module-01/index.md
     - Lab 1.1: labs/module-01/lab-1-1.md
     - Lab 1.2: labs/module-01/lab-1-2.md
-  - Module 2 - TLS & HTTPS:
+  - TLS & HTTPS:
     - TLS & HTTPS Deep Dive: module-02/index.md
     - Lab 2.1: labs/module-02/lab-2-1.md
     - Lab 2.2: labs/module-02/lab-2-2.md
@@ -48,39 +49,39 @@ nav:
     - Lab 2.4: labs/module-02/lab-2-4.md
     - Lab 2.5: labs/module-02/lab-2-5.md
     - Lab 2.6: labs/module-02/lab-2-6.md
-  - Module 3 - SSH PKI:
+  - SSH:
     - SSH PKI: module-03/index.md
     - Lab 3.1: labs/module-03/lab-3-1.md
     - Lab 3.2: labs/module-03/lab-3-2.md
     - Lab 3.3: labs/module-03/lab-3-3.md
-  - Module 4 - Packet Visibility:
+  - Troubleshooting:
     - Packet-Level Visibility: module-04/index.md
     - Lab 4.1: labs/module-04/lab-4-1.md
     - Lab 4.2: labs/module-04/lab-4-2.md
-  - Module 5 - PKI Across Infra:
+  - Infra:
     - PKI Across Infra: module-05/index.md
     - Lab 5.1: labs/module-05/lab-5-1.md
     - Lab 5.2: labs/module-05/lab-5-2.md
     - Lab 5.3: labs/module-05/lab-5-3.md
-  - Module 6 - Identity:
+  - Identity:
     - Identity & Passwordless: module-06/index.md
     - Lab 6.1: labs/module-06/lab-6-1.md
     - Lab 6.2: labs/module-06/lab-6-2.md
     - Lab 6.3: labs/module-06/lab-6-3.md
-  - Module 7 - mTLS & Kubernetes:
+  - mTLS & Kubernetes:
     - mTLS & Kubernetes: module-07/index.md
     - Lab 7.1: labs/module-07/lab-7-1.md
     - Lab 7.2: labs/module-07/lab-7-2.md
     - Lab 7.3: labs/module-07/lab-7-3.md
-  - Module 8 - PKI Operations:
+  - PKI Operations:
     - PKI Operations: module-08/index.md
     - Lab 8.1: labs/module-08/lab-8-1.md
     - Lab 8.2: labs/module-08/lab-8-2.md
-  - Module 9 - Troubleshooting:
+  - Troubleshooting & On-call:
     - Troubleshooting & On-call: module-09/index.md
     - Lab 9.1: labs/module-09/lab-9-1.md
     - Lab 9.2: labs/module-09/lab-9-2.md
-  - Module 10 - Zero Trust:
+  - Zero Trust & Modern PKI:
     - Zero Trust & Modern PKI: module-10/index.md
     - Lab 10.1: labs/module-10/lab-10-1.md
   - Tools & Cheatsheets:
